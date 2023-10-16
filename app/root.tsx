@@ -38,21 +38,20 @@ export default function App() {
 
 export function Layout(props: any) {
   return (
-    <div className="container mx-auto">
-      <nav className="py-1 md:py-5 px-10 sm:px-5 flex flex-col sm:flex-row justify-between">
-        <Link to={"/"} className="text-2xl font-black">
-          Dashboard
-        </Link>
-        <div className="flex gap-6 ">
-          <Link to={"/login"} className="text-base font-semibold">
-            Login
-          </Link>
-          <Link to={"/signup"} className="text-base font-semibold">
-            Sign Up
-          </Link>
+    <div className="container mx-auto ">
+      <div className="flex flex-col justify-between min-h-[99vh]">
+        <div>
+          <h2 className="text-gray-500 text-1xl font-bold mt-3">
+            <Link to={"/"}>মমতাজ এন্টারপ্রাইজ</Link>
+          </h2>
+          {props?.children}
         </div>
-      </nav>
-      {props?.children}
+        <footer>
+          <p className="text-center">
+            Made by ARIF BISWAS and ©Copyright 2023, All rights reserved
+          </p>
+        </footer>
+      </div>
     </div>
   );
 }
