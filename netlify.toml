@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build" # This is the build command for your Remix project
+  publish = "build" # This is the directory that Netlify will deploy
+
+[build.environment]
+  NODE_VERSION = "14" # Specify the Node.js version you want to use
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

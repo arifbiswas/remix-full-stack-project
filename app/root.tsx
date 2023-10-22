@@ -47,7 +47,7 @@ export function Layout(props: any) {
           {props?.children}
         </div>
         <footer>
-          <p className="text-center">
+          <p className="text-center py-5 text-xs">
             Made by ARIF BISWAS and ©Copyright 2023, All rights reserved
           </p>
         </footer>

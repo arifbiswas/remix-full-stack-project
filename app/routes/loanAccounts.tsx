@@ -53,7 +53,7 @@ export default function loanAccounts() {
             </Link>
 
             <Link
-              to={"/loanAccounts"}
+              to={"/addnewaccount"}
               className="flex justify-start items-center gap-2  hover:text-blue-800 hover:underline transition-all duration-150"
             >
               <span className="text-[20px]">›</span>
